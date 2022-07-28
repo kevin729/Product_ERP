@@ -1,0 +1,45 @@
+@charset "ISO-8859-1";
+
+html {
+	background-color:darkgrey;
+}
+
+td {
+	border-style: solid;
+	border-color: black;
+}
+
+.menuBtn {
+	width:200px;
+	height:100px;
+	padding:30px;
+	background-color:blue;
+	display:block;
+	color:white;
+	font-size:30px;
+	float:left;
+	margin:30px;
+	text-align:center;
+}
+
+.ui-helper-hidden-accessible {
+	display:none;
+}
+
+.ui-autocomplete {
+	width:50px;
+	margin:0;
+	padding:0;
+	text-decoration: none;
+}
+
+.ui-menu-item {
+	border-style:solid;
+    text-decoration: none;
+    list-style: none;
+}
+
+.ui-menu-item:hover {
+	background-color:black;
+	color:white;
+}

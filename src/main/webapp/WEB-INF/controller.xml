@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screens>
+	<screen name="employees">
+		<model>getEmployees</model>
+		<view>/employees.jsp</view>
+	</screen>
+	
+	<screen name="hr">
+		<model>getEmployees</model>
+		<view>/hr.jsp</view>
+	</screen>
+	
+	<screen name="finance">
+
+		<view>/finance.html</view>
+	</screen>
+	
+	<screen name="products">
+		<model>getEmployees</model>
+		<model>getProducts</model>
+		<view>/products.jsp</view>
+	</screen>
+	
+	<screen name="services">
+
+		<view>/services.html</view>
+	</screen>
+	
+	<screen name="data">
+		<model>getLogs</model>
+		<view>/data.jsp</view>
+	</screen>
+</screens>
