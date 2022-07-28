@@ -3,7 +3,7 @@ package com.professorperson.product_management.models;
 public class Product {
 	private int id;
 	private String productTitle;
-	private String productDescription;
+	private String productDetails;
 	
 	public int getId() {
 		return id;
@@ -18,10 +18,10 @@ public class Product {
 		this.productTitle = productTitle;
 	}
 	public String getProductDescription() {
-		return productDescription;
+		return productDetails;
 	}
-	public void setProductDescription(String productDescription) {
-		this.productDescription = productDescription;
+	public void setProductDescription(String productDetails) {
+		this.productDetails = productDetails;
 	}
 	
 	

@@ -142,14 +142,17 @@ public class ControllerServlet extends HttpServlet {
 		context.put("employees", employees);
 	}
 	
-	public void getProducts() {
-		context.put("products", new String[] {"Product 1", "Product 2", "Product 3"});
-	}
-	
 	public void getLogs() {
 		Communication rest = CommunicationFactory.get(new RESTFactory());
 		String json = rest.send("https://lukemind.herokuapp.com/api/get_logs/1", "GET", "application/json", null);
 		Log[] logs = new Gson().fromJson(json, Log[].class);
 		context.put("logs", logs);
+	}
+	
+	public void getProducts() {
+		Communication rest = CommunicationFactory.get(new RESTFactory());
+		String json = rest.send("https://lukemind.herokuapp.com/api/get_task_titles/1", "GET", "application/json", null);
+		Map<String, double[]> products = new Gson().fromJson(json, Map.class);
+		context.put("products", products);
 	}
 }

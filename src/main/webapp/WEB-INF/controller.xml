@@ -16,7 +16,6 @@
 	</screen>
 	
 	<screen name="products">
-		<model>getEmployees</model>
 		<model>getProducts</model>
 		<view>/products.jsp</view>
 	</screen>

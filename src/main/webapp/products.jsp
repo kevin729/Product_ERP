@@ -5,16 +5,14 @@
 	<h1>Products</h1>
 	
 	<table>
-		<thead>
-			<tr>
-				<td>Page</td>
-			</tr>
-		</thead>
 		<tbody>
-			<c:forEach items="${context.users}" var="item">
+			<c:forEach items="${context.products}" var="item">
 				<tr>
 					<td>
-						${item}
+						${item.key}
+					</td>
+					<td>
+						${item.value[0] / item.value[1] * 100}
 					</td>
 				</tr>
 			</c:forEach>
