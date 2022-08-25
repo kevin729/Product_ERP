@@ -1,4 +1,4 @@
-package com.professorperson.product_management.services;
+package com.professorperson.product_management.services.communication;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -4,6 +4,10 @@ public class Product {
 	private int id;
 	private String productTitle;
 	private String productDetails;
+
+	public Product(String productTitle) {
+		this.productTitle = productTitle;
+	}
 	
 	public int getId() {
 		return id;

@@ -1,15 +1,14 @@
-package tests;
-
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.professorperson.product_management.factories.communication.CommunicationFactory;
 import org.junit.jupiter.api.Test;
 
 import com.google.gson.Gson;
-import com.professorperson.product_management.factories.CommunicationFactory;
-import com.professorperson.product_management.factories.RESTFactory;
-import com.professorperson.product_management.factories.SOAPFactory;
+
+import com.professorperson.product_management.factories.communication.RESTFactory;
+import com.professorperson.product_management.factories.communication.SOAPFactory;
 import com.professorperson.product_management.models.Product;
-import com.professorperson.product_management.services.Communication;
+import com.professorperson.product_management.services.communication.Communication;
 
 class CommunicationTests {
 
@@ -20,7 +19,7 @@ class CommunicationTests {
 		Gson gson = new Gson();
 		
 		Product[] product = gson.fromJson(json, Product[].class);
-		assertEquals("LM Mobile", product[0].getProductTitle());
+		assertEquals("LukeMind", product[0].getProductTitle());
 	}
 	
 	@Test

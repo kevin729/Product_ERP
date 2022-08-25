@@ -1,6 +1,6 @@
-package com.professorperson.product_management.factories;
+package com.professorperson.product_management.factories.communication;
 
-import com.professorperson.product_management.services.Communication;
+import com.professorperson.product_management.services.communication.Communication;
 
 /**
  * Consumer class

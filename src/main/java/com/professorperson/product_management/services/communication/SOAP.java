@@ -1,6 +1,4 @@
-package com.professorperson.product_management.services;
-
-import com.professorperson.product_management.factories.CommunicationAbstractFactory;
+package com.professorperson.product_management.services.communication;
 
 public class SOAP extends Communication {
 
